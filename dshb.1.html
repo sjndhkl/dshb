@@ -57,6 +57,7 @@
     <a href="#SYNOPSIS">SYNOPSIS</a>
     <a href="#DESCRIPTION">DESCRIPTION</a>
     <a href="#OPTIONS">OPTIONS</a>
+    <a href="#COMMANDS">COMMANDS</a>
     <a href="#STATS">STATS</a>
     <a href="#ENVIRONMENT">ENVIRONMENT</a>
     <a href="#REPOSITORY">REPOSITORY</a>
@@ -86,17 +87,28 @@
 
 <p>An OS X system monitor in Swift, inspired by top &amp; htop. Displays live readings
 of system CPU &amp; memory usage, machine temperature sensors, fan speeds, battery
-information and other miscellaneous system statistics. The TUI (text-based user
-interface) uses color coating to imply status and is fully resizable. Stats are
-updated at one second intervals while still maintaining low overhead (the
-observer effect is inescapable in this case sadly).</p>
+information and other miscellaneous system statistics. The ncurses based TUI
+(text-based user interface) uses color coating to imply status and is fully
+resizable. Stats are updated at one second intervals while still maintaining
+low overhead (the observer effect is inescapable in this case sadly).</p>
 
 <h2 id="OPTIONS">OPTIONS</h2>
+
+<p>List of supported command line options (flags/switchs):</p>
 
 <dl>
 <dt><code>-f</code>, <code>--frequency</code> <var>value</var></dt><dd><p>Statistic update frequency in seconds. Default is 1.</p></dd>
 <dt><code>-h</code>, <code>--help</code></dt><dd><p>Show the help message (list of options) and exit.</p></dd>
 <dt><code>-v</code>, <code>--version</code></dt><dd><p>Show dshb version and exit.</p></dd>
+</dl>
+
+
+<h2 id="COMMANDS">COMMANDS</h2>
+
+<p>List of supported interactive commands for use during application runtime:</p>
+
+<dl>
+<dt class="flush"><code>q</code></dt><dd>Quit.</dd>
 </dl>
 
 
